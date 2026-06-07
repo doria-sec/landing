@@ -153,6 +153,57 @@
       </div>
     </section>
 
+    <!-- Why Doria Section -->
+    <section class="products-section" id="why-doria" style="padding-top: 0">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Why Doria?</h2>
+          <p class="section-subtitle">
+            We don't just alert and wait. We intercept and act.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- AI Threat Detection -->
+          <div class="bento-card">
+            <div class="card-icon"><i class="ti ti-brain"></i></div>
+            <h3 class="bento-card-title">AI-Powered Threat Detection</h3>
+            <p class="bento-card-desc">
+              We leverage advanced AI models and stateless AST scanning to
+              analyze package metadata, code patterns, and behavioral signals to
+              identify malicious packages with high accuracy.
+            </p>
+            <div class="micro-visual ast-tree-visual">
+              <div class="ast-node-row">
+                <div class="ast-indicator"></div>
+                <span class="cli-dim">XGBoost ML</span>
+              </div>
+              <div class="ast-node-row" style="padding-left: 12px">
+                <div class="ast-indicator" style="background: var(--threat-red)"></div>
+                <span class="cli-red">Entropy Anomaly Detected</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contextual Risk -->
+          <div class="bento-card">
+            <div class="card-icon"><i class="ti ti-scan-eye"></i></div>
+            <h3 class="bento-card-title">Contextual Risk Assessment</h3>
+            <p class="bento-card-desc">
+              Doria doesn't just flag threats; it provides detailed contextual
+              information about why a package is risky via LLM reasoning,
+              helping engineers make informed decisions instantly.
+            </p>
+            <div class="micro-visual">
+              <div class="cli-dim">
+                LLM Reason: "Unexpected outbound network call via child_process.exec."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>

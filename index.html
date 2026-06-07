@@ -69,9 +69,35 @@
           autonomously resolves vulnerabilities before they reach your disk.
         </p>
         <div class="hero-ctas">
-          <button class="btn-primary">
+          <button class="btn-primary" onclick="triggerScanSimulation('huggingface-cli')">
             <i class="ti ti-reload"></i> Re-run Simulation
           </button>
+        </div>
+      </div>
+
+      <!-- Inline Terminal Interface -->
+      <div class="terminal-wrapper">
+        <div class="terminal-toggle-tabs">
+          <button class="terminal-tab-btn active" id="tab-huggingface-cli" onclick="triggerScanSimulation('huggingface-cli')">
+            scan: huggingface-cli (Blocked)
+          </button>
+          <button class="terminal-tab-btn" id="tab-huggingface_hub" onclick="triggerScanSimulation('huggingface_hub')">
+            scan: huggingface_hub (Clean)
+          </button>
+        </div>
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <div class="terminal-title">elvis@macbook Doria (venv)</div>
+            <div style="width: 42px"></div>
+          </div>
+          <div class="terminal-body" id="term-body">
+            <!-- Dynamically populated -->
+          </div>
         </div>
       </div>
     </section>

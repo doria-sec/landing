@@ -14,3 +14,4 @@ node_modules/
 jspm_packages/
 .pnpm-store
 .vite/
+.DS_Store

@@ -482,3 +482,108 @@ h1 span {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+/* --- Why Doria (Bento Features) --- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.bento-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Clean Hover Glow Effect (Replaced the noisy grid) */
+.bento-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: radial-gradient(
+    circle at top center,
+    rgba(255, 254, 203, 0.06),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.bento-card:hover::after {
+  opacity: 1;
+}
+.bento-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-icon {
+  color: var(--doria-yellow);
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background: rgba(255, 254, 203, 0.05);
+  border: 1px solid rgba(255, 254, 203, 0.1);
+  margin-bottom: 1rem;
+}
+
+.bento-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+.bento-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Micro-Visuals (Adjusted for high readability) */
+.micro-visual {
+  margin-top: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.ast-tree-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.ast-node-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ast-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--doria-yellow);
+}

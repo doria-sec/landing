@@ -101,6 +101,58 @@
       </div>
     </section>
 
+    <!-- Our Products Section -->
+    <section class="products-section" id="products">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Our Products</h2>
+          <p class="section-subtitle">
+            Purpose-built tools for engineers and enterprise security teams.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-tag">
+              <i class="ti ti-code"></i> Open Source & Free
+            </div>
+            <h3 class="product-title">Doria CLI</h3>
+            <p class="product-desc">
+              A drop-in replacement for your package manager. Intercepts
+              installs, scans for malicious code, catches AI-hallucinated
+              packages, and blocks threats before they hit your machine. No
+              config required.
+            </p>
+            <div class="micro-visual" style="margin-top: 2rem">
+              <div class="cli-dim">$ doria install nanoid</div>
+              <div class="cli-green">
+                [+] Package is safe. Proceeding with install...
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-tag">
+              <i class="ti ti-building-castle"></i> Enterprise
+            </div>
+            <h3 class="product-title">Doria Dashboard</h3>
+            <p class="product-desc">
+              Continuous visibility for security teams. Real-time risk
+              assessment across your organization's repositories, exposed
+              secrets tracking, RBAC, and autonomous remediation oversight built
+              for enterprise workflows.
+            </p>
+            <div class="micro-visual" style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
+              <div style="flex: 1; height: 4px; background: var(--border-light); border-radius: 4px;">
+                <div style="width: 20%; height: 100%; background: var(--threat-red); border-radius: 4px;"></div>
+              </div>
+              <div class="cli-dim">37 Threats Blocked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>
